@@ -1,0 +1,14 @@
+Experiment Log
+============================
+Model: Simple RNN from scratch using NumPy
+Dataset: Kaggle Yahoo Finance Dataset 2018-2023
+Sequence Length: 20
+Hidden Size: 32
+Learning Rate: 0.001
+Epochs: 50
+Train Size: 986
+Test Size: 232
+----------------------------
+Test MSE: 173044.141182
+Test RMSE: 415.985746
+Test MAE: 322.709550
