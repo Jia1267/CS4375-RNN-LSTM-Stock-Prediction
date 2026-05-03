@@ -1,3 +1,5 @@
+from datetime import datetime
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -277,9 +279,11 @@ def save_experiment_log(
     rmse,
     mae
 ):
-    with open(filename, "w") as f:
-        f.write("Experiment Log\n")
-        f.write("============================\n")
+    with open(filename, "a", encoding="utf-8") as f:
+        f.write("\n")
+        f.write("=" * 60 + "\n")
+        f.write(f"Run: {datetime.now().isoformat(sep=' ', timespec='seconds')}\n")
+        f.write("=" * 60 + "\n")
         f.write("Model: Simple RNN from scratch using NumPy\n")
         f.write("Dataset: Kaggle Yahoo Finance Dataset 2018-2023\n")
         f.write(f"Sequence Length: {sequence_length}\n")
