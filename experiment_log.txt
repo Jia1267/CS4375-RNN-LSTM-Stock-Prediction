@@ -12,3 +12,184 @@ Test Size: 232
 Test MSE: 173044.141182
 Test RMSE: 415.985746
 Test MAE: 322.709550
+
+Experiment 1
+Model: Simple RNN
+Implementation: From scratch using NumPy
+Target column: Close*
+Sequence length: 20
+Hidden size: 32
+Learning rate: 0.001
+Epochs: 50
+Loss function: Mean Squared Error (MSE)
+Optimizer: Stochastic Gradient Descent (SGD)
+Train/Test Split: 80/20
+Dataset size: 1258
+Train size after sequences: 986
+Test size after sequences: 232
+Test MSE: 171957.5967
+Test RMSE: 414.6777
+Test MAE: 321.7161
+
+Experiment 2
+Model: Simple RNN
+Implementation: From scratch using NumPy
+Target column: Close*
+Sequence length: 10
+Hidden size: 32
+Learning rate: 0.001
+Epochs: 50
+Loss function: Mean Squared Error (MSE)
+Optimizer: Stochastic Gradient Descent (SGD)
+Train/Test Split: 80/20
+Dataset size: 1258
+Train size after sequences: 996
+Test size after sequences: 242
+Test MSE: 176538.4009
+Test RMSE: 420.1647
+Test MAE: 325.0657
+
+Experiment 3
+Model: Simple RNN
+Implementation: From scratch using NumPy
+Target column: Close*
+Sequence length: 30
+Hidden size: 32
+Learning rate: 0.001
+Epochs: 50
+Loss function: Mean Squared Error (MSE)
+Optimizer: Stochastic Gradient Descent (SGD)
+Train/Test Split: 80/20
+Dataset size: 1258
+Train size after sequences: 976
+Test size after sequences: 222
+Test MSE: 172050.5007
+Test RMSE: 414.7897
+Test MAE: 321.0409
+
+Experiment 4
+Model: Simple RNN
+Implementation: From scratch using NumPy
+Target column: Close*
+Sequence length: 20
+Hidden size: 16
+Learning rate: 0.001
+Epochs: 50
+Loss function: Mean Squared Error (MSE)
+Optimizer: Stochastic Gradient Descent (SGD)
+Train/Test Split: 80/20
+Dataset size: 1258
+Train size after sequences: 986
+Test size after sequences: 232
+Test MSE: 176071.8379
+Test RMSE: 419.6091
+Test MAE: 326.0009
+
+Experiment 5
+Model: Simple RNN
+Implementation: From scratch using NumPy
+Target column: Close*
+Sequence length: 20
+Hidden size: 64
+Learning rate: 0.001
+Epochs: 50
+Loss function: Mean Squared Error (MSE)
+Optimizer: Stochastic Gradient Descent (SGD)
+Train/Test Split: 80/20
+Dataset size: 1258
+Train size after sequences: 986
+Test size after sequences: 232
+Test MSE: 166037.2614
+Test RMSE: 407.4767
+Test MAE: 317.0115
+
+Experiment 6
+Model: Simple RNN
+Implementation: From scratch using NumPy
+Target column: Close*
+Sequence length: 20
+Hidden size: 32
+Learning rate: 0.0005
+Epochs: 50
+Loss function: Mean Squared Error (MSE)
+Optimizer: Stochastic Gradient Descent (SGD)
+Train/Test Split: 80/20
+Dataset size: 1258
+Train size after sequences: 986
+Test size after sequences: 232
+Test MSE: 192039.4455
+Test RMSE: 438.2231
+Test MAE: 340.1132
+
+Experiment 7
+Model: Simple RNN
+Implementation: From scratch using NumPy
+Target column: Close*
+Sequence length: 20
+Hidden size: 32
+Learning rate: 0.003
+Epochs: 50
+Loss function: Mean Squared Error (MSE)
+Optimizer: Stochastic Gradient Descent (SGD)
+Train/Test Split: 80/20
+Dataset size: 1258
+Train size after sequences: 986
+Test size after sequences: 232
+Test MSE: 159873.9015
+Test RMSE: 399.8423
+Test MAE: 308.1046
+
+Experiment 8
+Model: Simple RNN
+Implementation: From scratch using NumPy
+Target column: Close*
+Sequence length: 30
+Hidden size: 64
+Learning rate: 0.001
+Epochs: 50
+Loss function: Mean Squared Error (MSE)
+Optimizer: Stochastic Gradient Descent (SGD)
+Train/Test Split: 80/20
+Dataset size: 1258
+Train size after sequences: 976
+Test size after sequences: 222
+Test MSE: 166148.6117
+Test RMSE: 407.6133
+Test MAE: 316.6308
+
+Experiment 9
+Model: Simple RNN
+Implementation: From scratch using NumPy
+Target column: Close*
+Sequence length: 10
+Hidden size: 16
+Learning rate: 0.001
+Epochs: 50
+Loss function: Mean Squared Error (MSE)
+Optimizer: Stochastic Gradient Descent (SGD)
+Train/Test Split: 80/20
+Dataset size: 1258
+Train size after sequences: 996
+Test size after sequences: 242
+Test MSE: 180670.5526
+Test RMSE: 425.0536
+Test MAE: 328.9846
+
+Experiment 10
+Model: Simple RNN
+Implementation: From scratch using NumPy
+Target column: Close*
+Sequence length: 20
+Hidden size: 64
+Learning rate: 0.0005
+Epochs: 80
+Loss function: Mean Squared Error (MSE)
+Optimizer: Stochastic Gradient Descent (SGD)
+Train/Test Split: 80/20
+Dataset size: 1258
+Train size after sequences: 986
+Test size after sequences: 232
+Test MSE: 170203.4056
+Test RMSE: 412.5572
+Test MAE: 321.5527
+
