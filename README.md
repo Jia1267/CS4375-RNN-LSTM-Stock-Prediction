@@ -33,7 +33,7 @@ The main columns used are:
 The target column is: Close*
 This means the model predicts the next trading day's closing price.
 
-
+```text
 Project Structure
 CS4375-RNN-LSTM-Stock-Prediction/
 │
