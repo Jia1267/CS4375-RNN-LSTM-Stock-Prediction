@@ -135,6 +135,13 @@ Test RMSE: 502.6425
 Test MAE: 394.5134
 Test MAPE: 1.2303%
 
+How to Run LSTM
+Install the required packages:
+pip install numpy pandas matplotlib openpyxl torch
+
+Run the LSTM code:
+python lstm_stock_prediction.py
+
 
 LSTM Output
 Running the LSTM code will generate result figures such as:
