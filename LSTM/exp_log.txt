@@ -1,0 +1,221 @@
+LSTM Experiment Log
+===================
+
+Data file: yahoo_data.xlsx
+Target column: Close*
+Feature columns: ['Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Dataset size: 1258
+Train/Test Split: 80/20
+
+========================================
+
+Experiment 1
+Model: Manual LSTM
+Target column: Close*
+Sequence length: 20
+Hidden size: 32
+Learning rate: 0.001
+Epochs: 50
+Loss function: MSE
+Optimizer: Adam
+Train/Test Split: 80/19
+Dataset size: 1258
+Train samples: 990
+Test samples: 248
+Final Training Loss: 0.002405
+Test MSE: 541746.5625
+Test RMSE: 736.0343
+Test MAE: 546.0360
+Test MAPE: 1.7222%
+
+----------------------------------------
+
+Experiment 2
+Model: Manual LSTM
+Target column: Close*
+Sequence length: 10
+Hidden size: 32
+Learning rate: 0.001
+Epochs: 50
+Loss function: MSE
+Optimizer: Adam
+Train/Test Split: 80/19
+Dataset size: 1258
+Train samples: 998
+Test samples: 250
+Final Training Loss: 0.002605
+Test MSE: 451115.0625
+Test RMSE: 671.6510
+Test MAE: 506.2063
+Test MAPE: 1.5937%
+
+----------------------------------------
+
+Experiment 3
+Model: Manual LSTM
+Target column: Close*
+Sequence length: 30
+Hidden size: 32
+Learning rate: 0.001
+Epochs: 50
+Loss function: MSE
+Optimizer: Adam
+Train/Test Split: 80/19
+Dataset size: 1258
+Train samples: 982
+Test samples: 246
+Final Training Loss: 0.002444
+Test MSE: 544794.1875
+Test RMSE: 738.1017
+Test MAE: 547.3994
+Test MAPE: 1.7270%
+
+----------------------------------------
+
+Experiment 4
+Model: Manual LSTM
+Target column: Close*
+Sequence length: 20
+Hidden size: 16
+Learning rate: 0.001
+Epochs: 50
+Loss function: MSE
+Optimizer: Adam
+Train/Test Split: 80/19
+Dataset size: 1258
+Train samples: 990
+Test samples: 248
+Final Training Loss: 0.033554
+Test MSE: 3930232.2500
+Test RMSE: 1982.4813
+Test MAE: 1758.0123
+Test MAPE: 5.3161%
+
+----------------------------------------
+
+Experiment 5
+Model: Manual LSTM
+Target column: Close*
+Sequence length: 20
+Hidden size: 64
+Learning rate: 0.001
+Epochs: 50
+Loss function: MSE
+Optimizer: Adam
+Train/Test Split: 80/19
+Dataset size: 1258
+Train samples: 990
+Test samples: 248
+Final Training Loss: 0.004100
+Test MSE: 1116173.3750
+Test RMSE: 1056.4911
+Test MAE: 926.7798
+Test MAPE: 2.8143%
+
+----------------------------------------
+
+Experiment 6
+Model: Manual LSTM
+Target column: Close*
+Sequence length: 20
+Hidden size: 32
+Learning rate: 0.0005
+Epochs: 50
+Loss function: MSE
+Optimizer: Adam
+Train/Test Split: 80/19
+Dataset size: 1258
+Train samples: 990
+Test samples: 248
+Final Training Loss: 0.013974
+Test MSE: 2493023.0000
+Test RMSE: 1578.9310
+Test MAE: 1389.0836
+Test MAPE: 4.2002%
+
+----------------------------------------
+
+Experiment 7
+Model: Manual LSTM
+Target column: Close*
+Sequence length: 20
+Hidden size: 32
+Learning rate: 0.003
+Epochs: 50
+Loss function: MSE
+Optimizer: Adam
+Train/Test Split: 80/19
+Dataset size: 1258
+Train samples: 990
+Test samples: 248
+Final Training Loss: 0.000779
+Test MSE: 303706.7500
+Test RMSE: 551.0960
+Test MAE: 433.8632
+Test MAPE: 1.3523%
+
+----------------------------------------
+
+Experiment 8
+Model: Manual LSTM
+Target column: Close*
+Sequence length: 30
+Hidden size: 64
+Learning rate: 0.001
+Epochs: 50
+Loss function: MSE
+Optimizer: Adam
+Train/Test Split: 80/19
+Dataset size: 1258
+Train samples: 982
+Test samples: 246
+Final Training Loss: 0.004085
+Test MSE: 1090729.1250
+Test RMSE: 1044.3798
+Test MAE: 915.7261
+Test MAPE: 2.7818%
+
+----------------------------------------
+
+Experiment 9
+Model: Manual LSTM
+Target column: Close*
+Sequence length: 10
+Hidden size: 16
+Learning rate: 0.001
+Epochs: 50
+Loss function: MSE
+Optimizer: Adam
+Train/Test Split: 80/19
+Dataset size: 1258
+Train samples: 998
+Test samples: 250
+Final Training Loss: 0.031833
+Test MSE: 4992504.0000
+Test RMSE: 2234.3912
+Test MAE: 2013.2495
+Test MAPE: 6.0891%
+
+----------------------------------------
+
+Experiment 10
+Model: Manual LSTM
+Target column: Close*
+Sequence length: 20
+Hidden size: 64
+Learning rate: 0.0005
+Epochs: 80
+Loss function: MSE
+Optimizer: Adam
+Train/Test Split: 80/19
+Dataset size: 1258
+Train samples: 990
+Test samples: 248
+Final Training Loss: 0.002127
+Test MSE: 530596.9375
+Test RMSE: 728.4209
+Test MAE: 565.7928
+Test MAPE: 1.7757%
+
+----------------------------------------
+
