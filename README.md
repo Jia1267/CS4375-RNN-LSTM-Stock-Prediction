@@ -105,3 +105,50 @@ Mean Absolute Error (MAE)
 Lower values mean better prediction performance.
 
 
+LSTM Model
+The LSTM model is implemented manually using PyTorch basic tensor operations and custom LSTM gate calculations. The model does not use the built-in PyTorch LSTM layer. Instead, it manually computes the forget gate, input gate, candidate cell state, output gate, cell state, and hidden state.
+
+The model uses previous stock data as a sequence input and predicts the next trading day's Close* value. In the best LSTM experiment, the model uses the previous 20 trading days to predict the next trading day's closing price.
+
+
+Best LSTM Result
+After testing different hyperparameters, the best LSTM result used the following setting:
+
+Model: Manual LSTM
+Target column: Close*
+Sequence length: 20
+Hidden size: 32
+Learning rate: 0.01
+Epochs: 50
+Loss function: Mean Squared Error (MSE)
+Optimizer: Adam
+Train/Test Split: 80/20
+Dataset size: 1258
+Train samples: 990
+Test samples: 248
+
+Final Training Loss: 0.000687
+
+Final test result:
+Test MSE: 252649.4531
+Test RMSE: 502.6425
+Test MAE: 394.5134
+Test MAPE: 1.2303%
+
+
+LSTM Output
+Running the LSTM code will generate result figures such as:
+
+lstm_training_loss.png
+lstm_prediction_result.png
+
+The LSTM training loss figure shows how the model loss changes during training.
+The LSTM prediction result figure compares the actual closing price with the predicted closing price.
+
+
+LSTM Experiment Log
+The LSTM experiments are saved in:
+
+exp_log.txt
+
+This file records the input settings and output results for each experiment, including sequence length, hidden size, learning rate, epochs, final training loss, MSE, RMSE, MAE, and MAPE.
