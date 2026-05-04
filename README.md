@@ -31,6 +31,7 @@ The main columns used are:
 - Volume
 
 The target column is: Close*
+
 This means the model predicts the next trading day's closing price.
 
 ```text
