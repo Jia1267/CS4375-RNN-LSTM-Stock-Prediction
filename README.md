@@ -152,3 +152,19 @@ The LSTM experiments are saved in:
 exp_log.txt
 
 This file records the input settings and output results for each experiment, including sequence length, hidden size, learning rate, epochs, final training loss, MSE, RMSE, MAE, and MAPE.
+
+
+
+
+RNN and LSTM Comparison
+Based on the final test results, the RNN model achieved lower MSE, RMSE, and MAE than the LSTM model in this project. The best RNN model had a Test RMSE of 393.6113 and Test MAE of 303.2032, while the best LSTM model had a Test RMSE of 502.6425 and Test MAE of 394.5134.
+
+This means the RNN model performed better on this dataset. One possible reason is that the dataset is relatively small, with only 1258 rows. The LSTM model has a more complex structure, so it may need more data or more tuning to perform better. However, the LSTM model still produced a low MAPE of 1.2303%, which means its average percentage prediction error was small.
+
+Model Comparison Table
+
+Model        MSE           RMSE       MAE        
+RNN          154929.8222   393.6113   303.2032   
+LSTM         252649.4531   502.6425   394.5134   
+
+From the table, the RNN model has lower MSE, RMSE, and MAE than the LSTM model. Therefore, the RNN model performed better overall in this project.
