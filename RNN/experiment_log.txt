@@ -193,3 +193,18 @@ Test MSE: 170203.4056
 Test RMSE: 412.5572
 Test MAE: 321.5527
 
+Experiment 11
+Model: Simple RNN
+Implementation: From scratch using NumPy
+Target column: Close*
+Sequence length: 20
+Hidden size: 32
+Learning rate: 0.01
+Epochs: 50
+Loss function: Mean Squared Error (MSE)
+Optimizer: Stochastic Gradient Descent (SGD)
+Train/Test Split: 80/20
+Dataset size: 1258
+Test MSE: 154929.8222
+Test RMSE: 393.6113
+Test MAE: 303.2032

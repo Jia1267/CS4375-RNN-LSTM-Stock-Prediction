@@ -198,7 +198,7 @@ def main():
     model = SimpleRNN(
         input_size=X_train.shape[2],
         hidden_size=32,
-        lr=0.003
+        lr=0.01
     )
 
     ## Train the model and evaluate on the test set

@@ -895,3 +895,90 @@ MSE:  170203.4056
 RMSE: 412.5572
 MAE:  321.5527
 ============================
+
+Experiment 11
+Model: Simple RNN
+Implementation: From scratch using NumPy
+Target column: Close*
+Sequence length: 20
+Hidden size: 32
+Learning rate: 0.01
+Epochs: 50
+Loss function: Mean Squared Error (MSE)
+Optimizer: Stochastic Gradient Descent (SGD)
+Train/Test Split: 80/20
+Dataset size: 1258
+Test MSE: 154929.8222
+Test RMSE: 393.6113
+Test MAE: 303.2032
+
+(cs4375) PS F:\F\School\3\CS4375\Project\RNN> python .\rnn_stock_prediction.py
+Dataset loaded.
+Columns: ['Date', 'Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Shape: (1258, 7)
+
+Features used: ['Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Target column: Close*
+Cleaned shape: (1258, 6)
+
+Sequence data:
+X_train: (986, 20, 6)
+y_train: (986, 1)
+X_test: (232, 20, 6)
+y_test: (232, 1)
+Epoch 1/50, Loss: 0.051974
+Epoch 2/50, Loss: 0.009976
+Epoch 3/50, Loss: 0.007774
+Epoch 4/50, Loss: 0.007783
+Epoch 5/50, Loss: 0.007784
+Epoch 6/50, Loss: 0.007790
+Epoch 7/50, Loss: 0.007795
+Epoch 8/50, Loss: 0.007797
+Epoch 9/50, Loss: 0.007796
+Epoch 10/50, Loss: 0.007792
+Epoch 11/50, Loss: 0.007785
+Epoch 12/50, Loss: 0.007775
+Epoch 13/50, Loss: 0.007765
+Epoch 14/50, Loss: 0.007753
+Epoch 15/50, Loss: 0.007741
+Epoch 16/50, Loss: 0.007728
+Epoch 17/50, Loss: 0.007716
+Epoch 18/50, Loss: 0.007704
+Epoch 19/50, Loss: 0.007691
+Epoch 20/50, Loss: 0.007679
+Epoch 21/50, Loss: 0.007667
+Epoch 22/50, Loss: 0.007655
+Epoch 23/50, Loss: 0.007644
+Epoch 24/50, Loss: 0.007632
+Epoch 25/50, Loss: 0.007621
+Epoch 26/50, Loss: 0.007610
+Epoch 27/50, Loss: 0.007600
+Epoch 28/50, Loss: 0.007590
+Epoch 29/50, Loss: 0.007581
+Epoch 30/50, Loss: 0.007572
+Epoch 31/50, Loss: 0.007564
+Epoch 32/50, Loss: 0.007556
+Epoch 33/50, Loss: 0.007550
+Epoch 34/50, Loss: 0.007543
+Epoch 35/50, Loss: 0.007538
+Epoch 36/50, Loss: 0.007533
+Epoch 37/50, Loss: 0.007529
+Epoch 38/50, Loss: 0.007526
+Epoch 39/50, Loss: 0.007523
+Epoch 40/50, Loss: 0.007520
+Epoch 41/50, Loss: 0.007518
+Epoch 42/50, Loss: 0.007517
+Epoch 43/50, Loss: 0.007515
+Epoch 44/50, Loss: 0.007514
+Epoch 45/50, Loss: 0.007513
+Epoch 46/50, Loss: 0.007513
+Epoch 47/50, Loss: 0.007512
+Epoch 48/50, Loss: 0.007512
+Epoch 49/50, Loss: 0.007512
+Epoch 50/50, Loss: 0.007511
+
+Final Test Results
+MSE:  154929.8222
+RMSE: 393.6113
+MAE:  303.2032
+============================
