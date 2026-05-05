@@ -1,0 +1,984 @@
+Experiment 1
+Model: Simple RNN
+Implementation: From scratch using NumPy
+Target column: Close*
+Sequence length: 20
+Hidden size: 32
+Learning rate: 0.001
+Epochs: 50
+Loss function: Mean Squared Error (MSE)
+Optimizer: Stochastic Gradient Descent (SGD)
+Train/Test Split: 80/20
+Dataset size: 1258
+Test MSE: 171957.5967
+Test RMSE: 414.6777
+Test MAE: 321.7161
+
+Columns: ['Date', 'Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Shape: (1258, 7)
+
+Features used: ['Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Target column: Close*
+Cleaned shape: (1258, 6)
+
+Sequence data:
+X_train: (986, 20, 6)
+y_train: (986, 1)
+X_test: (232, 20, 6)
+y_test: (232, 1)
+Epoch 1/50, Loss: 0.499810
+Epoch 2/50, Loss: 0.015877
+Epoch 3/50, Loss: 0.008835
+Epoch 4/50, Loss: 0.008592
+Epoch 5/50, Loss: 0.008480
+Epoch 6/50, Loss: 0.008395
+Epoch 7/50, Loss: 0.008323
+Epoch 8/50, Loss: 0.008260
+Epoch 9/50, Loss: 0.008203
+Epoch 10/50, Loss: 0.008151
+Epoch 11/50, Loss: 0.008103
+Epoch 12/50, Loss: 0.008059
+Epoch 13/50, Loss: 0.008019
+Epoch 14/50, Loss: 0.007982
+Epoch 15/50, Loss: 0.007947
+Epoch 16/50, Loss: 0.007915
+Epoch 17/50, Loss: 0.007885
+Epoch 18/50, Loss: 0.007857
+Epoch 19/50, Loss: 0.007830
+Epoch 20/50, Loss: 0.007806
+Epoch 21/50, Loss: 0.007783
+Epoch 22/50, Loss: 0.007761
+Epoch 23/50, Loss: 0.007740
+Epoch 24/50, Loss: 0.007720
+Epoch 25/50, Loss: 0.007702
+Epoch 26/50, Loss: 0.007684
+Epoch 27/50, Loss: 0.007668
+Epoch 28/50, Loss: 0.007652
+Epoch 29/50, Loss: 0.007637
+Epoch 30/50, Loss: 0.007622
+Epoch 31/50, Loss: 0.007608
+Epoch 32/50, Loss: 0.007595
+Epoch 33/50, Loss: 0.007583
+Epoch 34/50, Loss: 0.007570
+Epoch 35/50, Loss: 0.007559
+Epoch 36/50, Loss: 0.007548
+Epoch 37/50, Loss: 0.007537
+Epoch 38/50, Loss: 0.007527
+Epoch 39/50, Loss: 0.007517
+Epoch 40/50, Loss: 0.007507
+Epoch 41/50, Loss: 0.007498
+Epoch 42/50, Loss: 0.007489
+Epoch 43/50, Loss: 0.007481
+Epoch 44/50, Loss: 0.007472
+Epoch 45/50, Loss: 0.007465
+Epoch 46/50, Loss: 0.007457
+Epoch 47/50, Loss: 0.007449
+Epoch 48/50, Loss: 0.007442
+Epoch 49/50, Loss: 0.007435
+Epoch 50/50, Loss: 0.007428
+
+Final Test Results
+MSE:  171957.5967
+RMSE: 414.6777
+MAE:  321.7161
+=========================================
+
+Experiment 2
+Model: Simple RNN
+Implementation: From scratch using NumPy
+Target column: Close*
+Sequence length: 10
+Hidden size: 32
+Learning rate: 0.001
+Epochs: 50
+Loss function: Mean Squared Error (MSE)
+Optimizer: Stochastic Gradient Descent (SGD)
+Train/Test Split: 80/20
+Dataset size: 1258
+Test MSE: 176538.4009
+Test RMSE: 420.1647
+Test MAE: 325.0657
+
+Dataset loaded.
+Columns: ['Date', 'Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Shape: (1258, 7)
+
+Features used: ['Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Target column: Close*
+Cleaned shape: (1258, 6)
+
+Sequence data:
+X_train: (996, 10, 6)
+y_train: (996, 1)
+X_test: (242, 10, 6)
+y_test: (242, 1)
+Epoch 1/50, Loss: 0.495544
+Epoch 2/50, Loss: 0.015094
+Epoch 3/50, Loss: 0.008751
+Epoch 4/50, Loss: 0.008517
+Epoch 5/50, Loss: 0.008409
+Epoch 6/50, Loss: 0.008326
+Epoch 7/50, Loss: 0.008256
+Epoch 8/50, Loss: 0.008193
+Epoch 9/50, Loss: 0.008137
+Epoch 10/50, Loss: 0.008086
+Epoch 11/50, Loss: 0.008039
+Epoch 12/50, Loss: 0.007996
+Epoch 13/50, Loss: 0.007957
+Epoch 14/50, Loss: 0.007920
+Epoch 15/50, Loss: 0.007886
+Epoch 16/50, Loss: 0.007854
+Epoch 17/50, Loss: 0.007825
+Epoch 18/50, Loss: 0.007797
+Epoch 19/50, Loss: 0.007771
+Epoch 20/50, Loss: 0.007747
+Epoch 21/50, Loss: 0.007724
+Epoch 22/50, Loss: 0.007702
+Epoch 23/50, Loss: 0.007682
+Epoch 24/50, Loss: 0.007663
+Epoch 25/50, Loss: 0.007645
+Epoch 26/50, Loss: 0.007627
+Epoch 27/50, Loss: 0.007611
+Epoch 28/50, Loss: 0.007595
+Epoch 29/50, Loss: 0.007580
+Epoch 30/50, Loss: 0.007566
+Epoch 31/50, Loss: 0.007552
+Epoch 32/50, Loss: 0.007539
+Epoch 33/50, Loss: 0.007527
+Epoch 34/50, Loss: 0.007515
+Epoch 35/50, Loss: 0.007504
+Epoch 36/50, Loss: 0.007493
+Epoch 37/50, Loss: 0.007482
+Epoch 38/50, Loss: 0.007472
+Epoch 39/50, Loss: 0.007462
+Epoch 40/50, Loss: 0.007453
+Epoch 41/50, Loss: 0.007444
+Epoch 42/50, Loss: 0.007435
+Epoch 43/50, Loss: 0.007427
+Epoch 44/50, Loss: 0.007419
+Epoch 45/50, Loss: 0.007411
+Epoch 46/50, Loss: 0.007403
+Epoch 47/50, Loss: 0.007396
+Epoch 48/50, Loss: 0.007389
+Epoch 49/50, Loss: 0.007382
+Epoch 50/50, Loss: 0.007375
+
+Final Test Results
+MSE:  176538.4009
+RMSE: 420.1647
+MAE:  325.0657
+=====================================================
+
+Experiment 3
+Model: Simple RNN
+Implementation: From scratch using NumPy
+Target column: Close*
+Sequence length: 30
+Hidden size: 32
+Learning rate: 0.001
+Epochs: 50
+Loss function: Mean Squared Error (MSE)
+Optimizer: Stochastic Gradient Descent (SGD)
+Train/Test Split: 80/20
+Dataset size: 1258
+Test MSE: 172050.5007
+Test RMSE: 414.7897
+Test MAE: 321.0409
+
+(cs4375) PS F:\F\School\3\CS4375\Project> python .\rnn_stock_prediction.py
+Dataset loaded.
+Columns: ['Date', 'Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Shape: (1258, 7)
+
+Features used: ['Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Target column: Close*
+Cleaned shape: (1258, 6)
+
+Sequence data:
+X_train: (976, 30, 6)
+y_train: (976, 1)
+X_test: (222, 30, 6)
+y_test: (222, 1)
+Epoch 1/50, Loss: 0.504481
+Epoch 2/50, Loss: 0.016857
+Epoch 3/50, Loss: 0.008930
+Epoch 4/50, Loss: 0.008660
+Epoch 5/50, Loss: 0.008543
+Epoch 6/50, Loss: 0.008456
+Epoch 7/50, Loss: 0.008384
+Epoch 8/50, Loss: 0.008320
+Epoch 9/50, Loss: 0.008262
+Epoch 10/50, Loss: 0.008210
+Epoch 11/50, Loss: 0.008162
+Epoch 12/50, Loss: 0.008118
+Epoch 13/50, Loss: 0.008077
+Epoch 14/50, Loss: 0.008040
+Epoch 15/50, Loss: 0.008005
+Epoch 16/50, Loss: 0.007973
+Epoch 17/50, Loss: 0.007943
+Epoch 18/50, Loss: 0.007914
+Epoch 19/50, Loss: 0.007888
+Epoch 20/50, Loss: 0.007863
+Epoch 21/50, Loss: 0.007840
+Epoch 22/50, Loss: 0.007818
+Epoch 23/50, Loss: 0.007797
+Epoch 24/50, Loss: 0.007777
+Epoch 25/50, Loss: 0.007759
+Epoch 26/50, Loss: 0.007741
+Epoch 27/50, Loss: 0.007724
+Epoch 28/50, Loss: 0.007708
+Epoch 29/50, Loss: 0.007693
+Epoch 30/50, Loss: 0.007679
+Epoch 31/50, Loss: 0.007665
+Epoch 32/50, Loss: 0.007652
+Epoch 33/50, Loss: 0.007639
+Epoch 34/50, Loss: 0.007627
+Epoch 35/50, Loss: 0.007615
+Epoch 36/50, Loss: 0.007604
+Epoch 37/50, Loss: 0.007593
+Epoch 38/50, Loss: 0.007583
+Epoch 39/50, Loss: 0.007573
+Epoch 40/50, Loss: 0.007563
+Epoch 41/50, Loss: 0.007554
+Epoch 42/50, Loss: 0.007545
+Epoch 43/50, Loss: 0.007537
+Epoch 44/50, Loss: 0.007528
+Epoch 45/50, Loss: 0.007520
+Epoch 46/50, Loss: 0.007513
+Epoch 47/50, Loss: 0.007505
+Epoch 48/50, Loss: 0.007498
+Epoch 49/50, Loss: 0.007491
+Epoch 50/50, Loss: 0.007484
+
+Final Test Results
+MSE:  172050.5007
+RMSE: 414.7897
+MAE:  321.0409
+(cs4375) PS F:\F\School\3\CS4375\Project>
+==========================================
+
+Experiment 4
+Model: Simple RNN
+Implementation: From scratch using NumPy
+Target column: Close*
+Sequence length: 20
+Hidden size: 16
+Learning rate: 0.001
+Epochs: 50
+Loss function: Mean Squared Error (MSE)
+Optimizer: Stochastic Gradient Descent (SGD)
+Train/Test Split: 80/20
+Dataset size: 1258
+Test MSE: 176071.8379
+Test RMSE: 419.6091
+Test MAE: 326.0009
+
+(cs4375) PS F:\F\School\3\CS4375\Project> python .\rnn_stock_prediction.py
+Dataset loaded.
+Columns: ['Date', 'Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Shape: (1258, 7)
+
+Features used: ['Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Target column: Close*
+Cleaned shape: (1258, 6)
+
+Sequence data:
+X_train: (986, 20, 6)
+y_train: (986, 1)
+X_test: (232, 20, 6)
+y_test: (232, 1)
+Epoch 1/50, Loss: 0.609885
+Epoch 2/50, Loss: 0.037128
+Epoch 3/50, Loss: 0.011092
+Epoch 4/50, Loss: 0.010400
+Epoch 5/50, Loss: 0.010018
+Epoch 6/50, Loss: 0.009746
+Epoch 7/50, Loss: 0.009528
+Epoch 8/50, Loss: 0.009344
+Epoch 9/50, Loss: 0.009185
+Epoch 10/50, Loss: 0.009045
+Epoch 11/50, Loss: 0.008922
+Epoch 12/50, Loss: 0.008812
+Epoch 13/50, Loss: 0.008714
+Epoch 14/50, Loss: 0.008625
+Epoch 15/50, Loss: 0.008545
+Epoch 16/50, Loss: 0.008473
+Epoch 17/50, Loss: 0.008406
+Epoch 18/50, Loss: 0.008346
+Epoch 19/50, Loss: 0.008290
+Epoch 20/50, Loss: 0.008239
+Epoch 21/50, Loss: 0.008192
+Epoch 22/50, Loss: 0.008148
+Epoch 23/50, Loss: 0.008107
+Epoch 24/50, Loss: 0.008069
+Epoch 25/50, Loss: 0.008034
+Epoch 26/50, Loss: 0.008000
+Epoch 27/50, Loss: 0.007969
+Epoch 28/50, Loss: 0.007940
+Epoch 29/50, Loss: 0.007913
+Epoch 30/50, Loss: 0.007887
+Epoch 31/50, Loss: 0.007862
+Epoch 32/50, Loss: 0.007839
+Epoch 33/50, Loss: 0.007817
+Epoch 34/50, Loss: 0.007797
+Epoch 35/50, Loss: 0.007777
+Epoch 36/50, Loss: 0.007758
+Epoch 37/50, Loss: 0.007740
+Epoch 38/50, Loss: 0.007723
+Epoch 39/50, Loss: 0.007707
+Epoch 40/50, Loss: 0.007691
+Epoch 41/50, Loss: 0.007677
+Epoch 42/50, Loss: 0.007662
+Epoch 43/50, Loss: 0.007649
+Epoch 44/50, Loss: 0.007636
+Epoch 45/50, Loss: 0.007623
+Epoch 46/50, Loss: 0.007611
+Epoch 47/50, Loss: 0.007600
+Epoch 48/50, Loss: 0.007588
+Epoch 49/50, Loss: 0.007578
+Epoch 50/50, Loss: 0.007567
+
+Final Test Results
+MSE:  176071.8379
+RMSE: 419.6091
+MAE:  326.0009
+============================
+
+Experiment 5
+Model: Simple RNN
+Implementation: From scratch using NumPy
+Target column: Close*
+Sequence length: 20
+Hidden size: 64
+Learning rate: 0.001
+Epochs: 50
+Loss function: Mean Squared Error (MSE)
+Optimizer: Stochastic Gradient Descent (SGD)
+Train/Test Split: 80/20
+Dataset size: 1258
+Test MSE: 166037.2614
+Test RMSE: 407.4767
+Test MAE: 317.0115
+
+(cs4375) PS F:\F\School\3\CS4375\Project> python .\rnn_stock_prediction.py
+Dataset loaded.
+Columns: ['Date', 'Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Shape: (1258, 7)
+
+Features used: ['Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Target column: Close*
+Cleaned shape: (1258, 6)
+
+Sequence data:
+X_train: (986, 20, 6)
+y_train: (986, 1)
+X_test: (232, 20, 6)
+y_test: (232, 1)
+Epoch 1/50, Loss: 0.431686
+Epoch 2/50, Loss: 0.010075
+Epoch 3/50, Loss: 0.007892
+Epoch 4/50, Loss: 0.007805
+Epoch 5/50, Loss: 0.007779
+Epoch 6/50, Loss: 0.007761
+Epoch 7/50, Loss: 0.007747
+Epoch 8/50, Loss: 0.007733
+Epoch 9/50, Loss: 0.007720
+Epoch 10/50, Loss: 0.007708
+Epoch 11/50, Loss: 0.007696
+Epoch 12/50, Loss: 0.007685
+Epoch 13/50, Loss: 0.007673
+Epoch 14/50, Loss: 0.007663
+Epoch 15/50, Loss: 0.007652
+Epoch 16/50, Loss: 0.007642
+Epoch 17/50, Loss: 0.007632
+Epoch 18/50, Loss: 0.007622
+Epoch 19/50, Loss: 0.007613
+Epoch 20/50, Loss: 0.007603
+Epoch 21/50, Loss: 0.007594
+Epoch 22/50, Loss: 0.007586
+Epoch 23/50, Loss: 0.007577
+Epoch 24/50, Loss: 0.007569
+Epoch 25/50, Loss: 0.007560
+Epoch 26/50, Loss: 0.007552
+Epoch 27/50, Loss: 0.007545
+Epoch 28/50, Loss: 0.007537
+Epoch 29/50, Loss: 0.007530
+Epoch 30/50, Loss: 0.007522
+Epoch 31/50, Loss: 0.007515
+Epoch 32/50, Loss: 0.007508
+Epoch 33/50, Loss: 0.007502
+Epoch 34/50, Loss: 0.007495
+Epoch 35/50, Loss: 0.007489
+Epoch 36/50, Loss: 0.007482
+Epoch 37/50, Loss: 0.007476
+Epoch 38/50, Loss: 0.007470
+Epoch 39/50, Loss: 0.007464
+Epoch 40/50, Loss: 0.007458
+Epoch 41/50, Loss: 0.007453
+Epoch 42/50, Loss: 0.007447
+Epoch 43/50, Loss: 0.007442
+Epoch 44/50, Loss: 0.007436
+Epoch 45/50, Loss: 0.007431
+Epoch 46/50, Loss: 0.007426
+Epoch 47/50, Loss: 0.007421
+Epoch 48/50, Loss: 0.007416
+Epoch 49/50, Loss: 0.007411
+Epoch 50/50, Loss: 0.007406
+
+Final Test Results
+MSE:  166037.2614
+RMSE: 407.4767
+MAE:  317.0115
+================================
+
+Experiment 6
+Model: Simple RNN
+Implementation: From scratch using NumPy
+Target column: Close*
+Sequence length: 20
+Hidden size: 32
+Learning rate: 0.0005
+Epochs: 50
+Loss function: Mean Squared Error (MSE)
+Optimizer: Stochastic Gradient Descent (SGD)
+Train/Test Split: 80/20
+Dataset size: 1258
+Test MSE: 192039.4455
+Test RMSE: 438.2231
+Test MAE: 340.1132
+
+(cs4375) PS F:\F\School\3\CS4375\Project> python .\rnn_stock_prediction.py
+Dataset loaded.
+Columns: ['Date', 'Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Shape: (1258, 7)
+
+Features used: ['Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Target column: Close*
+Cleaned shape: (1258, 6)
+
+Sequence data:
+X_train: (986, 20, 6)
+y_train: (986, 1)
+X_test: (232, 20, 6)
+y_test: (232, 1)
+Epoch 1/50, Loss: 0.836739
+Epoch 2/50, Loss: 0.180896
+Epoch 3/50, Loss: 0.009341
+Epoch 4/50, Loss: 0.009147
+Epoch 5/50, Loss: 0.008981
+Epoch 6/50, Loss: 0.008876
+Epoch 7/50, Loss: 0.008792
+Epoch 8/50, Loss: 0.008721
+Epoch 9/50, Loss: 0.008657
+Epoch 10/50, Loss: 0.008599
+Epoch 11/50, Loss: 0.008545
+Epoch 12/50, Loss: 0.008495
+Epoch 13/50, Loss: 0.008448
+Epoch 14/50, Loss: 0.008404
+Epoch 15/50, Loss: 0.008362
+Epoch 16/50, Loss: 0.008323
+Epoch 17/50, Loss: 0.008286
+Epoch 18/50, Loss: 0.008252
+Epoch 19/50, Loss: 0.008218
+Epoch 20/50, Loss: 0.008187
+Epoch 21/50, Loss: 0.008157
+Epoch 22/50, Loss: 0.008129
+Epoch 23/50, Loss: 0.008102
+Epoch 24/50, Loss: 0.008076
+Epoch 25/50, Loss: 0.008051
+Epoch 26/50, Loss: 0.008028
+Epoch 27/50, Loss: 0.008005
+Epoch 28/50, Loss: 0.007984
+Epoch 29/50, Loss: 0.007963
+Epoch 30/50, Loss: 0.007943
+Epoch 31/50, Loss: 0.007924
+Epoch 32/50, Loss: 0.007906
+Epoch 33/50, Loss: 0.007889
+Epoch 34/50, Loss: 0.007872
+Epoch 35/50, Loss: 0.007855
+Epoch 36/50, Loss: 0.007840
+Epoch 37/50, Loss: 0.007825
+Epoch 38/50, Loss: 0.007810
+Epoch 39/50, Loss: 0.007796
+Epoch 40/50, Loss: 0.007783
+Epoch 41/50, Loss: 0.007770
+Epoch 42/50, Loss: 0.007757
+Epoch 43/50, Loss: 0.007745
+Epoch 44/50, Loss: 0.007733
+Epoch 45/50, Loss: 0.007721
+Epoch 46/50, Loss: 0.007710
+Epoch 47/50, Loss: 0.007699
+Epoch 48/50, Loss: 0.007689
+Epoch 49/50, Loss: 0.007679
+Epoch 50/50, Loss: 0.007669
+
+Final Test Results
+MSE:  192039.4455
+RMSE: 438.2231
+MAE:  340.1132
+============================
+
+Experiment 7
+Model: Simple RNN
+Implementation: From scratch using NumPy
+Target column: Close*
+Sequence length: 20
+Hidden size: 32
+Learning rate: 0.003
+Epochs: 50
+Loss function: Mean Squared Error (MSE)
+Optimizer: Stochastic Gradient Descent (SGD)
+Train/Test Split: 80/20
+Dataset size: 1258
+Test MSE: 159873.9015
+Test RMSE: 399.8423
+Test MAE: 308.1046
+
+(cs4375) PS F:\F\School\3\CS4375\Project> python .\rnn_stock_prediction.py
+Dataset loaded.
+Columns: ['Date', 'Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Shape: (1258, 7)
+
+Features used: ['Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Target column: Close*
+Cleaned shape: (1258, 6)
+
+Sequence data:
+X_train: (986, 20, 6)
+y_train: (986, 1)
+X_test: (232, 20, 6)
+y_test: (232, 1)
+Epoch 1/50, Loss: 0.166345
+Epoch 2/50, Loss: 0.009160
+Epoch 3/50, Loss: 0.008079
+Epoch 4/50, Loss: 0.008005
+Epoch 5/50, Loss: 0.007950
+Epoch 6/50, Loss: 0.007901
+Epoch 7/50, Loss: 0.007857
+Epoch 8/50, Loss: 0.007817
+Epoch 9/50, Loss: 0.007781
+Epoch 10/50, Loss: 0.007748
+Epoch 11/50, Loss: 0.007718
+Epoch 12/50, Loss: 0.007690
+Epoch 13/50, Loss: 0.007665
+Epoch 14/50, Loss: 0.007641
+Epoch 15/50, Loss: 0.007619
+Epoch 16/50, Loss: 0.007598
+Epoch 17/50, Loss: 0.007579
+Epoch 18/50, Loss: 0.007561
+Epoch 19/50, Loss: 0.007544
+Epoch 20/50, Loss: 0.007528
+Epoch 21/50, Loss: 0.007513
+Epoch 22/50, Loss: 0.007499
+Epoch 23/50, Loss: 0.007486
+Epoch 24/50, Loss: 0.007474
+Epoch 25/50, Loss: 0.007462
+Epoch 26/50, Loss: 0.007451
+Epoch 27/50, Loss: 0.007440
+Epoch 28/50, Loss: 0.007430
+Epoch 29/50, Loss: 0.007421
+Epoch 30/50, Loss: 0.007411
+Epoch 31/50, Loss: 0.007403
+Epoch 32/50, Loss: 0.007395
+Epoch 33/50, Loss: 0.007387
+Epoch 34/50, Loss: 0.007379
+Epoch 35/50, Loss: 0.007372
+Epoch 36/50, Loss: 0.007365
+Epoch 37/50, Loss: 0.007359
+Epoch 38/50, Loss: 0.007353
+Epoch 39/50, Loss: 0.007347
+Epoch 40/50, Loss: 0.007341
+Epoch 41/50, Loss: 0.007335
+Epoch 42/50, Loss: 0.007330
+Epoch 43/50, Loss: 0.007325
+Epoch 44/50, Loss: 0.007320
+Epoch 45/50, Loss: 0.007315
+Epoch 46/50, Loss: 0.007311
+Epoch 47/50, Loss: 0.007307
+Epoch 48/50, Loss: 0.007302
+Epoch 49/50, Loss: 0.007298
+Epoch 50/50, Loss: 0.007294
+
+Final Test Results
+MSE:  159873.9015
+RMSE: 399.8423
+MAE:  308.1046
+============================
+
+Experiment 8
+Model: Simple RNN
+Implementation: From scratch using NumPy
+Target column: Close*
+Sequence length: 30
+Hidden size: 64
+Learning rate: 0.001
+Epochs: 50
+Loss function: Mean Squared Error (MSE)
+Optimizer: Stochastic Gradient Descent (SGD)
+Train/Test Split: 80/20
+Dataset size: 1258
+Test MSE: 166148.6117
+Test RMSE: 407.6133
+Test MAE: 316.6308
+
+(cs4375) PS F:\F\School\3\CS4375\Project> python .\rnn_stock_prediction.py
+Dataset loaded.
+Columns: ['Date', 'Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Shape: (1258, 7)
+
+Features used: ['Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Target column: Close*
+Cleaned shape: (1258, 6)
+
+Sequence data:
+X_train: (976, 30, 6)
+y_train: (976, 1)
+X_test: (222, 30, 6)
+y_test: (222, 1)
+Epoch 1/50, Loss: 0.436135
+Epoch 2/50, Loss: 0.010607
+Epoch 3/50, Loss: 0.007972
+Epoch 4/50, Loss: 0.007865
+Epoch 5/50, Loss: 0.007836
+Epoch 6/50, Loss: 0.007818
+Epoch 7/50, Loss: 0.007803
+Epoch 8/50, Loss: 0.007789
+Epoch 9/50, Loss: 0.007776
+Epoch 10/50, Loss: 0.007764
+Epoch 11/50, Loss: 0.007752
+Epoch 12/50, Loss: 0.007741
+Epoch 13/50, Loss: 0.007729
+Epoch 14/50, Loss: 0.007719
+Epoch 15/50, Loss: 0.007708
+Epoch 16/50, Loss: 0.007698
+Epoch 17/50, Loss: 0.007688
+Epoch 18/50, Loss: 0.007678
+Epoch 19/50, Loss: 0.007669
+Epoch 20/50, Loss: 0.007659
+Epoch 21/50, Loss: 0.007650
+Epoch 22/50, Loss: 0.007642
+Epoch 23/50, Loss: 0.007633
+Epoch 24/50, Loss: 0.007625
+Epoch 25/50, Loss: 0.007616
+Epoch 26/50, Loss: 0.007608
+Epoch 27/50, Loss: 0.007601
+Epoch 28/50, Loss: 0.007593
+Epoch 29/50, Loss: 0.007586
+Epoch 30/50, Loss: 0.007578
+Epoch 31/50, Loss: 0.007571
+Epoch 32/50, Loss: 0.007564
+Epoch 33/50, Loss: 0.007558
+Epoch 34/50, Loss: 0.007551
+Epoch 35/50, Loss: 0.007545
+Epoch 36/50, Loss: 0.007538
+Epoch 37/50, Loss: 0.007532
+Epoch 38/50, Loss: 0.007526
+Epoch 39/50, Loss: 0.007520
+Epoch 40/50, Loss: 0.007514
+Epoch 41/50, Loss: 0.007508
+Epoch 42/50, Loss: 0.007503
+Epoch 43/50, Loss: 0.007497
+Epoch 44/50, Loss: 0.007492
+Epoch 45/50, Loss: 0.007487
+Epoch 46/50, Loss: 0.007482
+Epoch 47/50, Loss: 0.007477
+Epoch 48/50, Loss: 0.007472
+Epoch 49/50, Loss: 0.007467
+Epoch 50/50, Loss: 0.007462
+
+Final Test Results
+MSE:  166148.6117
+RMSE: 407.6133
+MAE:  316.6308
+============================
+
+Experiment 9
+Model: Simple RNN
+Implementation: From scratch using NumPy
+Target column: Close*
+Sequence length: 10
+Hidden size: 16
+Learning rate: 0.001
+Epochs: 50
+Loss function: Mean Squared Error (MSE)
+Optimizer: Stochastic Gradient Descent (SGD)
+Train/Test Split: 80/20
+Dataset size: 1258
+Test MSE: 180670.5526
+Test RMSE: 425.0536
+Test MAE: 328.9846
+
+(cs4375) PS F:\F\School\3\CS4375\Project> python .\rnn_stock_prediction.py
+Dataset loaded.
+Columns: ['Date', 'Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Shape: (1258, 7)
+
+Features used: ['Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Target column: Close*
+Cleaned shape: (1258, 6)
+
+Sequence data:
+X_train: (996, 10, 6)
+y_train: (996, 1)
+X_test: (242, 10, 6)
+y_test: (242, 1)
+Epoch 1/50, Loss: 0.605489
+Epoch 2/50, Loss: 0.035277
+Epoch 3/50, Loss: 0.010969
+Epoch 4/50, Loss: 0.010292
+Epoch 5/50, Loss: 0.009919
+Epoch 6/50, Loss: 0.009653
+Epoch 7/50, Loss: 0.009440
+Epoch 8/50, Loss: 0.009259
+Epoch 9/50, Loss: 0.009103
+Epoch 10/50, Loss: 0.008966
+Epoch 11/50, Loss: 0.008844
+Epoch 12/50, Loss: 0.008736
+Epoch 13/50, Loss: 0.008640
+Epoch 14/50, Loss: 0.008552
+Epoch 15/50, Loss: 0.008474
+Epoch 16/50, Loss: 0.008402
+Epoch 17/50, Loss: 0.008337
+Epoch 18/50, Loss: 0.008277
+Epoch 19/50, Loss: 0.008223
+Epoch 20/50, Loss: 0.008172
+Epoch 21/50, Loss: 0.008126
+Epoch 22/50, Loss: 0.008083
+Epoch 23/50, Loss: 0.008042
+Epoch 24/50, Loss: 0.008005
+Epoch 25/50, Loss: 0.007970
+Epoch 26/50, Loss: 0.007938
+Epoch 27/50, Loss: 0.007907
+Epoch 28/50, Loss: 0.007878
+Epoch 29/50, Loss: 0.007851
+Epoch 30/50, Loss: 0.007826
+Epoch 31/50, Loss: 0.007802
+Epoch 32/50, Loss: 0.007779
+Epoch 33/50, Loss: 0.007757
+Epoch 34/50, Loss: 0.007737
+Epoch 35/50, Loss: 0.007717
+Epoch 36/50, Loss: 0.007699
+Epoch 37/50, Loss: 0.007681
+Epoch 38/50, Loss: 0.007665
+Epoch 39/50, Loss: 0.007649
+Epoch 40/50, Loss: 0.007633
+Epoch 41/50, Loss: 0.007619
+Epoch 42/50, Loss: 0.007605
+Epoch 43/50, Loss: 0.007591
+Epoch 44/50, Loss: 0.007578
+Epoch 45/50, Loss: 0.007566
+Epoch 46/50, Loss: 0.007554
+Epoch 47/50, Loss: 0.007543
+Epoch 48/50, Loss: 0.007532
+Epoch 49/50, Loss: 0.007521
+Epoch 50/50, Loss: 0.007511
+
+Final Test Results
+MSE:  180670.5526
+RMSE: 425.0536
+MAE:  328.9846
+============================
+
+Experiment 10
+Model: Simple RNN
+Implementation: From scratch using NumPy
+Target column: Close*
+Sequence length: 20
+Hidden size: 64
+Learning rate: 0.0005
+Epochs: 80
+Loss function: Mean Squared Error (MSE)
+Optimizer: Stochastic Gradient Descent (SGD)
+Train/Test Split: 80/20
+Dataset size: 1258
+Test MSE: 170203.4056
+Test RMSE: 412.5572
+Test MAE: 321.5527
+
+(cs4375) PS F:\F\School\3\CS4375\Project> python .\rnn_stock_prediction.py
+Dataset loaded.
+Columns: ['Date', 'Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Shape: (1258, 7)
+
+Features used: ['Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Target column: Close*
+Cleaned shape: (1258, 6)
+
+Sequence data:
+X_train: (986, 20, 6)
+y_train: (986, 1)
+X_test: (232, 20, 6)
+y_test: (232, 1)
+Epoch 1/80, Loss: 0.777370
+Epoch 2/80, Loss: 0.096165
+Epoch 3/80, Loss: 0.008233
+Epoch 4/80, Loss: 0.008012
+Epoch 5/80, Loss: 0.007932
+Epoch 6/80, Loss: 0.007895
+Epoch 7/80, Loss: 0.007871
+Epoch 8/80, Loss: 0.007854
+Epoch 9/80, Loss: 0.007840
+Epoch 10/80, Loss: 0.007827
+Epoch 11/80, Loss: 0.007816
+Epoch 12/80, Loss: 0.007805
+Epoch 13/80, Loss: 0.007794
+Epoch 14/80, Loss: 0.007784
+Epoch 15/80, Loss: 0.007775
+Epoch 16/80, Loss: 0.007765
+Epoch 17/80, Loss: 0.007756
+Epoch 18/80, Loss: 0.007747
+Epoch 19/80, Loss: 0.007738
+Epoch 20/80, Loss: 0.007730
+Epoch 21/80, Loss: 0.007721
+Epoch 22/80, Loss: 0.007713
+Epoch 23/80, Loss: 0.007705
+Epoch 24/80, Loss: 0.007697
+Epoch 25/80, Loss: 0.007690
+Epoch 26/80, Loss: 0.007682
+Epoch 27/80, Loss: 0.007675
+Epoch 28/80, Loss: 0.007667
+Epoch 29/80, Loss: 0.007660
+Epoch 30/80, Loss: 0.007653
+Epoch 31/80, Loss: 0.007647
+Epoch 32/80, Loss: 0.007640
+Epoch 33/80, Loss: 0.007633
+Epoch 34/80, Loss: 0.007627
+Epoch 35/80, Loss: 0.007621
+Epoch 36/80, Loss: 0.007614
+Epoch 37/80, Loss: 0.007608
+Epoch 38/80, Loss: 0.007602
+Epoch 39/80, Loss: 0.007596
+Epoch 40/80, Loss: 0.007590
+Epoch 41/80, Loss: 0.007585
+Epoch 42/80, Loss: 0.007579
+Epoch 43/80, Loss: 0.007574
+Epoch 44/80, Loss: 0.007568
+Epoch 45/80, Loss: 0.007563
+Epoch 46/80, Loss: 0.007558
+Epoch 47/80, Loss: 0.007553
+Epoch 48/80, Loss: 0.007547
+Epoch 49/80, Loss: 0.007542
+Epoch 50/80, Loss: 0.007538
+Epoch 51/80, Loss: 0.007533
+Epoch 52/80, Loss: 0.007528
+Epoch 53/80, Loss: 0.007523
+Epoch 54/80, Loss: 0.007519
+Epoch 55/80, Loss: 0.007514
+Epoch 56/80, Loss: 0.007510
+Epoch 57/80, Loss: 0.007505
+Epoch 58/80, Loss: 0.007501
+Epoch 59/80, Loss: 0.007497
+Epoch 60/80, Loss: 0.007492
+Epoch 61/80, Loss: 0.007488
+Epoch 62/80, Loss: 0.007484
+Epoch 63/80, Loss: 0.007480
+Epoch 64/80, Loss: 0.007476
+Epoch 65/80, Loss: 0.007472
+Epoch 66/80, Loss: 0.007468
+Epoch 67/80, Loss: 0.007465
+Epoch 68/80, Loss: 0.007461
+Epoch 69/80, Loss: 0.007457
+Epoch 70/80, Loss: 0.007453
+Epoch 71/80, Loss: 0.007450
+Epoch 72/80, Loss: 0.007446
+Epoch 73/80, Loss: 0.007443
+Epoch 74/80, Loss: 0.007439
+Epoch 75/80, Loss: 0.007436
+Epoch 76/80, Loss: 0.007432
+Epoch 77/80, Loss: 0.007429
+Epoch 78/80, Loss: 0.007426
+Epoch 79/80, Loss: 0.007423
+Epoch 80/80, Loss: 0.007419
+
+Final Test Results
+MSE:  170203.4056
+RMSE: 412.5572
+MAE:  321.5527
+============================
+
+Experiment 11
+Model: Simple RNN
+Implementation: From scratch using NumPy
+Target column: Close*
+Sequence length: 20
+Hidden size: 32
+Learning rate: 0.01
+Epochs: 50
+Loss function: Mean Squared Error (MSE)
+Optimizer: Stochastic Gradient Descent (SGD)
+Train/Test Split: 80/20
+Dataset size: 1258
+Test MSE: 154929.8222
+Test RMSE: 393.6113
+Test MAE: 303.2032
+
+(cs4375) PS F:\F\School\3\CS4375\Project\RNN> python .\rnn_stock_prediction.py
+Dataset loaded.
+Columns: ['Date', 'Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Shape: (1258, 7)
+
+Features used: ['Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume']
+Target column: Close*
+Cleaned shape: (1258, 6)
+
+Sequence data:
+X_train: (986, 20, 6)
+y_train: (986, 1)
+X_test: (232, 20, 6)
+y_test: (232, 1)
+Epoch 1/50, Loss: 0.051974
+Epoch 2/50, Loss: 0.009976
+Epoch 3/50, Loss: 0.007774
+Epoch 4/50, Loss: 0.007783
+Epoch 5/50, Loss: 0.007784
+Epoch 6/50, Loss: 0.007790
+Epoch 7/50, Loss: 0.007795
+Epoch 8/50, Loss: 0.007797
+Epoch 9/50, Loss: 0.007796
+Epoch 10/50, Loss: 0.007792
+Epoch 11/50, Loss: 0.007785
+Epoch 12/50, Loss: 0.007775
+Epoch 13/50, Loss: 0.007765
+Epoch 14/50, Loss: 0.007753
+Epoch 15/50, Loss: 0.007741
+Epoch 16/50, Loss: 0.007728
+Epoch 17/50, Loss: 0.007716
+Epoch 18/50, Loss: 0.007704
+Epoch 19/50, Loss: 0.007691
+Epoch 20/50, Loss: 0.007679
+Epoch 21/50, Loss: 0.007667
+Epoch 22/50, Loss: 0.007655
+Epoch 23/50, Loss: 0.007644
+Epoch 24/50, Loss: 0.007632
+Epoch 25/50, Loss: 0.007621
+Epoch 26/50, Loss: 0.007610
+Epoch 27/50, Loss: 0.007600
+Epoch 28/50, Loss: 0.007590
+Epoch 29/50, Loss: 0.007581
+Epoch 30/50, Loss: 0.007572
+Epoch 31/50, Loss: 0.007564
+Epoch 32/50, Loss: 0.007556
+Epoch 33/50, Loss: 0.007550
+Epoch 34/50, Loss: 0.007543
+Epoch 35/50, Loss: 0.007538
+Epoch 36/50, Loss: 0.007533
+Epoch 37/50, Loss: 0.007529
+Epoch 38/50, Loss: 0.007526
+Epoch 39/50, Loss: 0.007523
+Epoch 40/50, Loss: 0.007520
+Epoch 41/50, Loss: 0.007518
+Epoch 42/50, Loss: 0.007517
+Epoch 43/50, Loss: 0.007515
+Epoch 44/50, Loss: 0.007514
+Epoch 45/50, Loss: 0.007513
+Epoch 46/50, Loss: 0.007513
+Epoch 47/50, Loss: 0.007512
+Epoch 48/50, Loss: 0.007512
+Epoch 49/50, Loss: 0.007512
+Epoch 50/50, Loss: 0.007511
+
+Final Test Results
+MSE:  154929.8222
+RMSE: 393.6113
+MAE:  303.2032
+============================
