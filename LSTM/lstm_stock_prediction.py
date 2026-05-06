@@ -1,6 +1,7 @@
-import os
+import io
 import math
 import random
+import urllib.request
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -16,7 +17,9 @@ torch.manual_seed(SEED)
 
 
 # Basic experiment settings
-data_file = ["stock_data.xlsx", "yahoo_data.xlsx"]
+STOCK_DATA_URL = (
+    "https://raw.githubusercontent.com/swevswev/cs4375_dataset/main/stock_data.xlsx"
+)
 target_c = "Close*"
 sequence_length = 20
 t_ratio = 0.80
@@ -27,12 +30,13 @@ LEARNING_RATE = 0.01
 
 
 
-def find_data():
-   # The code checks both possible file names because our dataset file name changed before.
-   for filename in data_file:
-       if os.path.exists(filename):
-           return filename
-   raise FileNotFoundError("Could not find stock_data.xlsx or yahoo_data.xlsx.")
+def load_stock_data():
+   req = urllib.request.Request(
+       STOCK_DATA_URL,
+       headers={"User-Agent": "cs4375-lstm-stock-prediction/1.0"},
+   )
+   with urllib.request.urlopen(req) as resp:
+       return pd.read_excel(io.BytesIO(resp.read()))
 
 
 
@@ -125,8 +129,7 @@ class LSTM_reg(nn.Module):
 
 
 
-data_file = find_data()
-df = pd.read_excel(data_file)
+df = load_stock_data()
 
 
 # Clean column names and make sure the data is in time order.
@@ -164,7 +167,7 @@ X_test = torch.tensor(X[train_size:])
 y_test = torch.tensor(y[train_size:])
 
 
-print(f"Data file: {data_file}")
+print(f"Dataset URL: {STOCK_DATA_URL}")
 print(f"Dataset rows: {len(df)}")
 print(f"Sequence length: {sequence_length}")
 print(f"Train samples: {len(X_train)}")
