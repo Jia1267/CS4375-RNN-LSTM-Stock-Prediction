@@ -1,17 +1,28 @@
+import io
+import urllib.request
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.metrics import mean_squared_error, mean_absolute_error
+
+STOCK_DATA_URL = (
+    "https://raw.githubusercontent.com/swevswev/cs4375_dataset/main/stock_data.xlsx"
+)
 
 ## Set random seed for reproducibility
 np.random.seed(42)
 
 ## RNN implementation for stock price prediction
 def read_data():
-    file_name = "stock_data.xlsx"
-    df = pd.read_excel(file_name)
+    req = urllib.request.Request(
+        STOCK_DATA_URL,
+        headers={"User-Agent": "cs4375-rnn-stock-prediction/1.0"},
+    )
+    with urllib.request.urlopen(req) as resp:
+        df = pd.read_excel(io.BytesIO(resp.read()))
 
-    print("Dataset loaded.")
+    print("Dataset loaded from GitHub.")
     print("Columns:", df.columns.tolist())
     print("Shape:", df.shape)
 

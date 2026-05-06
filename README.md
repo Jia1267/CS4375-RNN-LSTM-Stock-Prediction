@@ -14,11 +14,26 @@ For the RNN model, the main model logic is implemented from scratch using NumPy 
 
 ## Dataset
 
-The dataset used in this project is the Yahoo Finance Dataset from Kaggle:
+The dataset is the Yahoo Finance Dataset from Kaggle (2018–2023):
 
 https://www.kaggle.com/datasets/suruchiarora/yahoo-finance-dataset-2018-2023
 
+The training scripts download `stock_data.xlsx` at run time from this GitHub mirror (no local copy in the repo):
+
+https://github.com/swevswev/cs4375_dataset
+
 The dataset contains daily stock market records from 2018 to 2023.
+
+
+## Requirements
+
+These are the installed dependencies
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+scikit-learn>=1.3
+openpyxl>=3.1
+torch>=2.0
 
 The main columns used are:
 
@@ -38,9 +53,6 @@ This means the model predicts the next trading day's closing price.
 Project Structure
 CS4375-RNN-LSTM-Stock-Prediction/
 │
-├── data/
-│   └── stock_data.xlsx
-│
 ├── RNN/
 │   ├── rnn_stock_prediction.py
 │   ├── training_loss.png
@@ -54,8 +66,7 @@ CS4375-RNN-LSTM-Stock-Prediction/
 ├── Report
 |   └── CS 4375 Project Report.pdf
 |
-├── README.md
-└── requirements.txt
+└──  README.md
 
 
 RNN Model
